@@ -1,0 +1,88 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: url("../img/banner.jpg");
+    background-size: 100% 100%;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+
+}
+
+.master {
+    position: relative;
+    height: 100%;
+    background: url(../img/master.png);
+}
+
+.main {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    width: 400px;
+    height: 400px;
+    background-color: #cccccc;
+}
+
+.top {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #038b4a, #3fe907);
+}
+
+.middle {
+    height: 300px;
+    background-color: green;
+}
+
+.middle .avater {
+    width: 85px;
+    height: 85px;
+    border: 1px solid #fff;
+    background: url(../img/wom.jpg);
+    background-size: 100% 100%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.middle .mainFont {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.connectType {
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.connectType img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.connectInfo {
+    margin-top: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+.connectInfo .fontSize{
+    font-size: 30px;
+}
+.connectInfo .hide {
+    display: none;
+}
+.jump{
+    font-size: 20px;
+}
+.bottom{
+    height: 100%;
+}

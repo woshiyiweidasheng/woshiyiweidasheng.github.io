@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-    <div>我是一个大帅逼</div>
-    <div>今年芳龄18</div>
-    <img src="./img/avatar.png" alt="">
+    <div class="master"></div>
+    <div class="main">
+        <div class="top"></div>
+        <div class="middle">
+            <div class="avater"></div>
+            <p class="mainFont">沃施一维达生的个人主页</p>
+            <div class="connectType">
+                <img class="img" src="./img/q.jpg" alt="">
+                <img class="img" src="./img/wechart.jpg" alt="">
+                <img class="img" src="./img/phone.jpg" alt="">
+            </div>
+            <div class="connectInfo">
+                <div class="hide fontSize">qq:643124968</div>
+                <div class="hide fontSize">WeChat:MMZZSS66</div>
+                <div class="hide fontSize">phone:18364122177</div>
+            </div>
+        </div>
+        <div class="bottom">
+            <a href="./userinfo.html" class="jump">点击进入个人主页</a>
+        </div>
+    </div>
 </body>
+<script>
+    window.onload = function () {
+        let imgs = document.querySelectorAll(".img")
+        let hides = document.querySelectorAll(".hide")
+        for (let i = 0; i < imgs.length; i++) {
+            imgs[i].onclick = function () {
+                for (let j = 0; j < hides.length; j++) {
+                    hides[j].className = "hide fontSize"
+                }
+                hides[i].className = "fontSize"
+            }
+        }
+    }
+</script>
+
 </html>
